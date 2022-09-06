@@ -1,0 +1,33 @@
+Parameter, Description
+\(B_{123}^{0}\), initial triple resistant bacteria
+\(B_{12}^{0}\), initial phage 1 & phage 2 double resistant bacteria
+\(B_{13}^{0}\), initial phage 1 & phage 3 double resistant bacteria
+\(B_{23}^{0}\), initial phage 2 & phage 3 double resistant bacteria
+\(B_{1}^{0}\), initial phage 1 monoresistant bacteria
+\(B_{2}^{0}\), initial phage 2 monoresistant bacteria
+\(B_{3}^{0}\), initial phage 3 monoresistant bacteria
+\(B_{sus}^{0}\), susceptible bacteria
+\(\lambda_{0}\), growth rate
+\(\lambda_{1}\), parameter for inhibition of growth
+\(B_{max}\), capacity of growth
+\(k_{1}\), infection rate constant
+\(b_{1}\), burst size for phage 1 
+\(k_{tr1}\), transit rate constant through infected bacteria compartments
+\(frac_{1}\), fraction of lowered of virulence by resistance to phage 1
+\(pr_{1}\), proportion of phage1 infected bacteria that does not burst and progresses to infection compartment1
+\(pr_{21}\), proportion of phage1 infected bacteria that progresses to infection compartment2 from infection compartment1
+\(k_{2}\), infection rate constant
+\(b_{2}\), burst size for phage 2 
+\(k_{tr2}\), transit rate constant through infected bacteria compartments
+\(frac_{2}\), fraction of lowered of virulence by resistance to phage 2
+\(pr_{2}\), proportion of phage2 infected bacteria that does not burst and progresses to infection compartment1
+\(pr_{22}\), proportion of phage2 infected bacteria that progresses to infection compartment2 from infection compartment1
+\(k_{3}\), infection rate constant
+\(b_{3}\), burst size for phage 3
+\(k_{tr3}\), transit rate constant through infected bacteria compartments
+\(frac_{3}\), fraction of lowered of virulence by resistance to phage 3
+\(pr_{3}\), proportion of phage3 infected bacteria that does not burst and progresses to infection compartment1
+\(pr_{23}\), proportion of phage3 infected bacteria that progresses to infection compartment2 from infection compartment1
+\(moi1\), dose of phage1
+\(moi2\), dose of phage2
+\(moi3\), dose of phage3

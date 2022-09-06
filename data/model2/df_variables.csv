@@ -1,0 +1,21 @@
+Variable, Description
+\(B\), non-resistant bacteria
+\(P_{1}\), phage 1
+\(P_{2}\), phage 2
+\(P_{3}\), phage 3
+\(R_{1}\), mono-resistant bacteria subpopulation to phage 1
+\(R_{2}\), mono-resistant bacteria subpopulation to phage 2
+\(R_{3}\), mono-resistant bacteria subpopulation to phage 3
+\(R_{12}\), bi-resistant bacteria subpopulation to phage1 & phage2
+\(R_{13}\), bi-resistant bacteria subpopulation to phage1 & phage3
+\(R_{23}\), bi-resistant bacteria subpopulation to phage2 & phage3
+\(R_{123}\), tri-resistant bacteria subpopulation to phage1 & phage2 & phage3
+\(I_{11}\), bacteria infected with phage 1; first compartment
+\(I_{21}\), bacteria infected with phage 1; second compartment
+\(I_{31}\), bacteria infected with phage 1; third compartment
+\(I_{12}\), bacteria infected with phage 2; first compartment
+\(I_{22}\), bacteria infected with phage 2; second compartment
+\(I_{32}\), bacteria infected with phage 2; third compartment
+\(I_{13}\), bacteria infected with phage 3; first compartment
+\(I_{23}\), bacteria infected with phage 3; second compartment
+\(I_{33})\), bacteria infected with phage 3; third compartment

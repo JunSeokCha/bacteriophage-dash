@@ -1,0 +1,50 @@
+Equations
+
+Fraction of Lowered Virulence for Double Resistant Subpopulations
+\(frac_{12} = frac_{1}\cdot frac_{2}\)
+\(frac_{13} = frac_{1}\cdot frac_{3}\)
+\(frac_{23} = frac_{2}\cdot frac_{3}\)
+\(frac_{123} = frac_{1}\cdot frac_{2}\cdot frac_{3}\)
+ 
+Amount of Total Bacteria
+\(I_{tot} = I_{11} + I_{21} + I_{31} + I_{12} + I_{22} + I_{32} + I_{13} + I_{23} + I_{33}\)
+\(B_{tot} = B + R_{1} + R_{2} + R_{3} + R + R_{13} + R_{23} + R_{123} + I_{tot}\)
+ 
+Amount of Susceptible Supbpopulations
+\(S_{1} = B_{tot} - R_{1} - R_{12} - R_{13} - R_{123}\)
+\(S_{2} = B_{tot} - R_{2} - R_{12} - R_{23} - R_{123}\)
+\(S_{3} = B_{tot} - R_{3} - R_{13} - R_{23} - R_{123}\)
+ 
+Equations for Phage Dynamics
+\(\frac{d}{dt} P_{1} = k_{1}*P_{1}\cdot S_{1} + b_{1}\cdot k_{tr1}\cdot (1 - pr{21})\cdot (I_{11} + I_{21} + I_{31})\)
+\(\frac{d}{dt} P_{2} = k_{2}*P_{3}\cdot S_{2} + b_{2}\cdot k_{tr2}\cdot (1 - pr{21})\cdot (I_{12} + I_{22} + I_{32})\)
+\(\frac{d}{dt} P_{3} = k_{3}*P_{3}\cdot S_{3} + b_{3}\cdot k_{tr3}\cdot (1 - pr{21})\cdot (I_{13} + I_{23} + I_{33})\)
+ 
+Equations for Non-Resistant Bacteria Dynamics
+\(\frac{d}{dt} B = \lambda_{0} \cdot B \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) - (k_{1}\cdot P_{1} + k_{2}\cdot P_{2} + k_{3}\cdot P_{3})*B\)
+ 
+Equations for Mono Resistant Bacteria Dynamics
+\(\frac{d}{dt}R_{1} = \lambda_{0} \cdot R_{1} \cdot (1 - (B_{tot}/(frac_{1}\cdot B_{max}))^{\lambda_{1}}) - (k_{2}\cdot P_{2} + k_{3}\cdot P_{3})\cdot R_{1}\)
+\(\frac{d}{dt}R_{2} = \lambda_{0} \cdot R_{2} \cdot (1 - (B_{tot}/(frac_{2}\cdot B_{max}))^{\lambda_{1}}) - (k_{1}\cdot P_{1} + k_{3}\cdot P_{3})\cdot R_{2}\)
+\(\frac{d}{dt}R_{3} = \lambda_{0} \cdot R_{3} \cdot (1 - (B_{tot}/(frac_{3}\cdot B_{max}))^{\lambda_{1}}) - (k_{1}\cdot P_{1} + k_{2}\cdot P_{2})\cdot R_{3}\)
+ 
+Equations for Double Resistant Bacteria Dynamics
+\(\frac{d}{dt}R_{12} = \lambda_{0} \cdot R_{12} \cdot (1 - (B_{tot}/(frac_{12} \cdot B_{max}))^{\lambda_{1}}) - k_{3}\cdot P_{3}\cdot R_{12}\)
+\(\frac{d}{dt}R_{13} = \lambda_{0} \cdot R_{13} \cdot (1 - (B_{tot}/(frac_{13} \cdot B_{max}))^{\lambda_{1}}) - k_{2}\cdot P_{2}\cdot R_{13}\)
+\(\frac{d}{dt}R_{23} = \lambda_{0} \cdot R_{23} \cdot (1 - (B_{tot}/(frac_{23} \cdot B_{max}))^{\lambda_{1}}) - k_{1}\cdot P_{1}\cdot R_{23}\)
+ 
+Equations for Triple Resistant Bacteria Dynamics
+\(\frac{d}{dt}R_{123} = \lambda_{0} \cdot R_{123} \cdot (1 - (B_{tot}/(frac_{123} \cdot B_{max}))^{\lambda_{1}})\)
+ 
+Equations for Infected Bacteria
+\(\frac{d}{dt}I_{11} = \lambda_{0} \cdot I_{11} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{1}\cdot k_{1}\cdot P_{1}\cdot S_{1} - k_{tr1}\cdot I_{11}\)
+\(\frac{d}{dt}I_{21} = \lambda_{0} \cdot I_{21} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{21}\cdot k_{tr1}\cdot I_{11} - k_{tr1}\cdot I_{21}\)
+\(\frac{d}{dt}I_{31} = \lambda_{0} \cdot I_{31} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{21}\cdot k_{tr1}\cdot I_{21} - k_{tr1}\cdot I_{31}\)
+
+\(\frac{d}{dt}I_{12} = \lambda_{0} \cdot I_{12} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{2}\cdot k_{2}\cdot P_{2}\cdot S_{2} - k_{tr2}\cdot I_{12}\)
+\(\frac{d}{dt}I_{22} = \lambda_{0} \cdot I_{22} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{22}\cdot k_{tr2}\cdot I_{12} - k_{tr2}\cdot I_{22}\)
+\(\frac{d}{dt}I_{32} = \lambda_{0} \cdot I_{32} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{22}\cdot k_{tr2}\cdot I_{22} - k_{tr2}\cdot I_{32}\)
+
+\(\frac{d}{dt}I_{13} = \lambda_{0} \cdot I_{13} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{3}\cdot k_{3}\cdot P_{3}\cdot S_{3} - k_{tr3}\cdot I_{13}\)
+\(\frac{d}{dt}I_{23} = \lambda_{0} \cdot I_{23} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{23}\cdot k_{tr3}\cdot I_{13} - k_{tr3}\cdot I_{23}\)
+\(\frac{d}{dt}I_{33} = \lambda_{0} \cdot I_{33} \cdot (1 - (B_{tot}/(B_{max}))^{\lambda_{1}}) + pr_{23}\cdot k_{tr3}\cdot I_{23} - k_{tr3}\cdot I_{33}\)
